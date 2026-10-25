@@ -1,0 +1,9 @@
+Summary for C:\Users\ToniH\curseforge\minecraft\Instances\airplacehelper\optimized_mods_staging\Newly-Optimized-Builds\inputoptimizer-1.0.1-nothrottle.jar
+Decompiled with CFR 0.152
+
+
+dev.kemmlow.inputoptimizer.rawinput.platform.WindowsRawInputEngine
+----------------------------
+
+drainBuffer()
+  Unable to fully structure code

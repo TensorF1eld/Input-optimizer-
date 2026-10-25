@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "inputoptimizer",
+  "version": "${version}",
+  "name": "Kemmlow's Input Optimizer (Enhanced)",
+  "description": "Low-latency client input with arrival-ordered key, button and scroll processing at the existing frame hook; network flushing follows the client's normal schedule.",
+  "authors": [
+    "Kemmlow",
+    "Enhanced"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/inputoptimizer/",
+    "sources": "https://github.com/Kemmlow/inputoptimizer/",
+    "issues": "https://github.com/Kemmlow/inputoptimizer/issues/"
+  },
+  "license": "LGPL-3.0-only",
+  "icon": "assets/inputoptimizer/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "modmenu": ["dev.kemmlow.inputoptimizer.InputOptimizerModMenu"],
+    "client": [
+      "dev.kemmlow.inputoptimizer.Main"
+    ]
+  },
+  "mixins": [
+    "inputoptimizer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.2",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "breaks": {
+    "rawinputbuffer": "*",
+    "ixeris": "*"
+  }
+}
